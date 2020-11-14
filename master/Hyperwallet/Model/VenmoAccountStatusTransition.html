@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Hyperwallet\Model\VenmoAccountStatusTransition | Hyperwallet REST SDK</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Hyperwallet_Model_VenmoAccountStatusTransition" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Hyperwallet REST SDK</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Hyperwallet.html">Hyperwallet</a></li><li class="backslash">\</li><li><a href="../../Hyperwallet/Model.html">Model</a></li><li class="backslash">\</li><li>VenmoAccountStatusTransition</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            VenmoAccountStatusTransition
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>VenmoAccountStatusTransition</strong>        extends <a href="../../Hyperwallet/Model/StatusTransition.html"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Represents a V4 Venmo Account Status Transition</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>TRANSITION_DE_ACTIVATED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_token">
+                                                                                string
+                </td>
+                <td>$token</td>
+                <td class="last">The status transition token</td>
+                <td><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#property_token"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_createdOn">
+                                                                                <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+                </td>
+                <td>$createdOn</td>
+                <td class="last">The status transition creation date</td>
+                <td><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#property_createdOn"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_transition">
+                                                                                string
+                </td>
+                <td>$transition</td>
+                <td class="last">The status transition</td>
+                <td><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#property_transition"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fromStatus">
+                                                                                string
+                </td>
+                <td>$fromStatus</td>
+                <td class="last">The old status</td>
+                <td><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#property_fromStatus"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_toStatus">
+                                                                                string
+                </td>
+                <td>$toStatus</td>
+                <td class="last">The new status</td>
+                <td><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#property_toStatus"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_notes">
+                                                                                string
+                </td>
+                <td>$notes</td>
+                <td class="last">The status transition notes</td>
+                <td><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#property_notes"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $properties = array())
+        
+                                            <p>Creates a instance of VenmoAccountStatusTransition</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_FILTERS_ARRAY">FILTERS_ARRAY</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#method_FILTERS_ARRAY"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getToken">getToken</a>()
+        
+                                            <p>Get the status transition token</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#method_getToken"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/StatusTransition.html"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setToken">setToken</a>(string $token)
+        
+                                            <p>Set the status transition token</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#method_setToken"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCreatedOn">getCreatedOn</a>()
+        
+                                            <p>Get the status transition creation date</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#method_getCreatedOn"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTransition">getTransition</a>()
+        
+                                            <p>Get the status transition</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#method_getTransition"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/StatusTransition.html"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTransition">setTransition</a>(string $transition)
+        
+                                            <p>Set the status transition</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#method_setTransition"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFromStatus">getFromStatus</a>()
+        
+                                            <p>Get the old status</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#method_getFromStatus"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getToStatus">getToStatus</a>()
+        
+                                            <p>Get the new status</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#method_getToStatus"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNotes">getNotes</a>()
+        
+                                            <p>Get the status transition notes</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#method_getNotes"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/StatusTransition.html"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNotes">setNotes</a>(string $notes)
+        
+                                            <p>Set the status transition notes</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../Hyperwallet/Model/StatusTransition.html#method_setNotes"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 19</div>
+        <code>                    
+    <strong>__construct</strong>(array $properties = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a instance of VenmoAccountStatusTransition</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$properties</td>
+                <td>The default properties</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_FILTERS_ARRAY">
+        <div class="location">in <a href="../../Hyperwallet/Model/StatusTransition.html#method_FILTERS_ARRAY"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a> at         line 29</div>
+        <code>        static            
+    <strong>FILTERS_ARRAY</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getToken">
+        <div class="location">in <a href="../../Hyperwallet/Model/StatusTransition.html#method_getToken"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a> at         line 47</div>
+        <code>                    string
+    <strong>getToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the status transition token</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setToken">
+        <div class="location">in <a href="../../Hyperwallet/Model/StatusTransition.html#method_setToken"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a> at         line 57</div>
+        <code>                    <a href="../../Hyperwallet/Model/StatusTransition.html"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a>
+    <strong>setToken</strong>(string $token)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the status transition token</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$token</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/StatusTransition.html"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCreatedOn">
+        <div class="location">in <a href="../../Hyperwallet/Model/StatusTransition.html#method_getCreatedOn"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a> at         line 67</div>
+        <code>                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+    <strong>getCreatedOn</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the status transition creation date</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTransition">
+        <div class="location">in <a href="../../Hyperwallet/Model/StatusTransition.html#method_getTransition"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a> at         line 76</div>
+        <code>                    string
+    <strong>getTransition</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the status transition</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTransition">
+        <div class="location">in <a href="../../Hyperwallet/Model/StatusTransition.html#method_setTransition"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a> at         line 86</div>
+        <code>                    <a href="../../Hyperwallet/Model/StatusTransition.html"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a>
+    <strong>setTransition</strong>(string $transition)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the status transition</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$transition</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/StatusTransition.html"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFromStatus">
+        <div class="location">in <a href="../../Hyperwallet/Model/StatusTransition.html#method_getFromStatus"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a> at         line 96</div>
+        <code>                    string
+    <strong>getFromStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the old status</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getToStatus">
+        <div class="location">in <a href="../../Hyperwallet/Model/StatusTransition.html#method_getToStatus"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a> at         line 105</div>
+        <code>                    string
+    <strong>getToStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the new status</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNotes">
+        <div class="location">in <a href="../../Hyperwallet/Model/StatusTransition.html#method_getNotes"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a> at         line 114</div>
+        <code>                    string
+    <strong>getNotes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the status transition notes</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNotes">
+        <div class="location">in <a href="../../Hyperwallet/Model/StatusTransition.html#method_setNotes"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a> at         line 124</div>
+        <code>                    <a href="../../Hyperwallet/Model/StatusTransition.html"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a>
+    <strong>setNotes</strong>(string $notes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the status transition notes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$notes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/StatusTransition.html"><abbr title="Hyperwallet\Model\StatusTransition">StatusTransition</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

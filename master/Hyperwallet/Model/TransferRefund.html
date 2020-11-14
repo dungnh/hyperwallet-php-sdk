@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Hyperwallet\Model\TransferRefund | Hyperwallet REST SDK</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Hyperwallet_Model_TransferRefund" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">Hyperwallet REST SDK</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../Hyperwallet.html">Hyperwallet</a></li><li class="backslash">\</li><li><a href="../../Hyperwallet/Model.html">Model</a></li><li class="backslash">\</li><li>TransferRefund</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            TransferRefund
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>TransferRefund</strong>        extends <a href="../../Hyperwallet/Model/BaseModel.html"><abbr title="Hyperwallet\Model\BaseModel">BaseModel</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Represents a V4 Transfer</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>STATUS_QUOTED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATUS_COMPLETED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>STATUS_FAILED</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_token">
+                                                                                string
+                </td>
+                <td>$token</td>
+                <td class="last">The transfer refund token</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_status">
+                                                                                string
+                </td>
+                <td>$status</td>
+                <td class="last">The transfer status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_clientRefundId">
+                                                                                string
+                </td>
+                <td>$clientRefundId</td>
+                <td class="last">The client transfer id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sourceToken">
+                                                                                string
+                </td>
+                <td>$sourceToken</td>
+                <td class="last">The source token</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sourceAmount">
+                                                                                string
+                </td>
+                <td>$sourceAmount</td>
+                <td class="last">The source amount</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sourceFeeAmount">
+                                                                                string
+                </td>
+                <td>$sourceFeeAmount</td>
+                <td class="last">The source fee amount</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sourceCurrency">
+                                                                                string
+                </td>
+                <td>$sourceCurrency</td>
+                <td class="last">The source currency</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_destinationToken">
+                                                                                string
+                </td>
+                <td>$destinationToken</td>
+                <td class="last">The destination token</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_destinationAmount">
+                                                                                string
+                </td>
+                <td>$destinationAmount</td>
+                <td class="last">The destination amount</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_destinationFeeAmount">
+                                                                                string
+                </td>
+                <td>$destinationFeeAmount</td>
+                <td class="last">The destination fee amount</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_destinationCurrency">
+                                                                                string
+                </td>
+                <td>$destinationCurrency</td>
+                <td class="last">The destination currency</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_foreignExchanges">
+                                                                                array
+                </td>
+                <td>$foreignExchanges</td>
+                <td class="last">The foreign exchanges</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_createdOn">
+                                                                                <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+                </td>
+                <td>$createdOn</td>
+                <td class="last">The transfer creation date</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_notes">
+                                                                                string
+                </td>
+                <td>$notes</td>
+                <td class="last">The notes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_memo">
+                                                                                string
+                </td>
+                <td>$memo</td>
+                <td class="last">The memo</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $properties = array())
+        
+                                            <p>Creates a instance of TransferRefund</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getToken">getToken</a>()
+        
+                                            <p>Get the transfer token</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setToken">setToken</a>(string $token)
+        
+                                            <p>Set the transfer token</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStatus">getStatus</a>()
+        
+                                            <p>Get the transfer status</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClientRefundId">getClientRefundId</a>()
+        
+                                            <p>Get the transfer token</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setClientRefundId">setClientRefundId</a>($clientRefundId)
+        
+                                            <p>Set the transfer token</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCreatedOn">getCreatedOn</a>()
+        
+                                            <p>Get the transfer creation date</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceToken">getSourceToken</a>()
+        
+                                            <p>Get transfer sourceToken</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSourceToken">setSourceToken</a>(string $sourceToken)
+        
+                                            <p>Set transfer sourceToken</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceAmount">getSourceAmount</a>()
+        
+                                            <p>Get transfer sourceAmount</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSourceAmount">setSourceAmount</a>(string $sourceAmount)
+        
+                                            <p>Set transfer sourceAmount</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceFeeAmount">getSourceFeeAmount</a>()
+        
+                                            <p>Get transfer sourceFeeAmount</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSourceFeeAmount">setSourceFeeAmount</a>(string $sourceFeeAmount)
+        
+                                            <p>Set transfer sourceFeeAmount</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSourceCurrency">getSourceCurrency</a>()
+        
+                                            <p>Get transfer sourceCurrency</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSourceCurrency">setSourceCurrency</a>(string $sourceCurrency)
+        
+                                            <p>Set transfer sourceCurrency</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDestinationToken">getDestinationToken</a>()
+        
+                                            <p>Get transfer destinationToken</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDestinationToken">setDestinationToken</a>(string $destinationToken)
+        
+                                            <p>Set transfer destinationToken</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDestinationAmount">getDestinationAmount</a>()
+        
+                                            <p>Get transfer destinationAmount</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDestinationAmount">setDestinationAmount</a>(string $destinationAmount)
+        
+                                            <p>Set transfer destinationAmount</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDestinationFeeAmount">getDestinationFeeAmount</a>()
+        
+                                            <p>Get transfer destinationFeeAmount</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDestinationCurrency">getDestinationCurrency</a>()
+        
+                                            <p>Get transfer destinationCurrency</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDestinationCurrency">setDestinationCurrency</a>(string $destinationCurrency)
+        
+                                            <p>Set transfer destinationCurrency</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getNotes">getNotes</a>()
+        
+                                            <p>Get transfer notes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setNotes">setNotes</a>(string $notes)
+        
+                                            <p>Set transfer notes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMemo">getMemo</a>()
+        
+                                            <p>Get transfer memo</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMemo">setMemo</a>(string $memo)
+        
+                                            <p>Set transfer memo</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getForeignExchanges">getForeignExchanges</a>()
+        
+                                            <p>Get transfer memo</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setForeignExchanges">setForeignExchanges</a>($foreignExchanges)
+        
+                                            <p>Set transfer memo</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 47</div>
+        <code>                    
+    <strong>__construct</strong>(array $properties = array())
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a instance of TransferRefund</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$properties</td>
+                <td>The default properties</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getToken">
+        <div class="location">at         line 56</div>
+        <code>                    string
+    <strong>getToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the transfer token</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setToken">
+        <div class="location">at         line 66</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setToken</strong>(string $token)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the transfer token</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$token</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStatus">
+        <div class="location">at         line 76</div>
+        <code>                    string
+    <strong>getStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the transfer status</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClientRefundId">
+        <div class="location">at         line 85</div>
+        <code>                    string
+    <strong>getClientRefundId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the transfer token</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setClientRefundId">
+        <div class="location">at         line 95</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setClientRefundId</strong>($clientRefundId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the transfer token</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$clientRefundId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCreatedOn">
+        <div class="location">at         line 105</div>
+        <code>                    <a target="_blank" href="http://php.net/DateTime">DateTime</a>
+    <strong>getCreatedOn</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the transfer creation date</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/DateTime">DateTime</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceToken">
+        <div class="location">at         line 114</div>
+        <code>                    string
+    <strong>getSourceToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer sourceToken</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSourceToken">
+        <div class="location">at         line 124</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setSourceToken</strong>(string $sourceToken)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set transfer sourceToken</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sourceToken</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceAmount">
+        <div class="location">at         line 134</div>
+        <code>                    string
+    <strong>getSourceAmount</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer sourceAmount</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSourceAmount">
+        <div class="location">at         line 144</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setSourceAmount</strong>(string $sourceAmount)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set transfer sourceAmount</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sourceAmount</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceFeeAmount">
+        <div class="location">at         line 154</div>
+        <code>                    string
+    <strong>getSourceFeeAmount</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer sourceFeeAmount</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSourceFeeAmount">
+        <div class="location">at         line 165</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setSourceFeeAmount</strong>(string $sourceFeeAmount)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set transfer sourceFeeAmount</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sourceFeeAmount</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSourceCurrency">
+        <div class="location">at         line 175</div>
+        <code>                    string
+    <strong>getSourceCurrency</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer sourceCurrency</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSourceCurrency">
+        <div class="location">at         line 185</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setSourceCurrency</strong>(string $sourceCurrency)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set transfer sourceCurrency</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sourceCurrency</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDestinationToken">
+        <div class="location">at         line 195</div>
+        <code>                    string
+    <strong>getDestinationToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer destinationToken</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDestinationToken">
+        <div class="location">at         line 205</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setDestinationToken</strong>(string $destinationToken)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set transfer destinationToken</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$destinationToken</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDestinationAmount">
+        <div class="location">at         line 215</div>
+        <code>                    string
+    <strong>getDestinationAmount</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer destinationAmount</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDestinationAmount">
+        <div class="location">at         line 225</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setDestinationAmount</strong>(string $destinationAmount)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set transfer destinationAmount</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$destinationAmount</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDestinationFeeAmount">
+        <div class="location">at         line 235</div>
+        <code>                    string
+    <strong>getDestinationFeeAmount</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer destinationFeeAmount</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDestinationCurrency">
+        <div class="location">at         line 244</div>
+        <code>                    string
+    <strong>getDestinationCurrency</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer destinationCurrency</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDestinationCurrency">
+        <div class="location">at         line 255</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setDestinationCurrency</strong>(string $destinationCurrency)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set transfer destinationCurrency</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$destinationCurrency</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNotes">
+        <div class="location">at         line 265</div>
+        <code>                    string
+    <strong>getNotes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer notes</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNotes">
+        <div class="location">at         line 275</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setNotes</strong>(string $notes)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set transfer notes</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$notes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMemo">
+        <div class="location">at         line 285</div>
+        <code>                    string
+    <strong>getMemo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer memo</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMemo">
+        <div class="location">at         line 295</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setMemo</strong>(string $memo)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set transfer memo</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$memo</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getForeignExchanges">
+        <div class="location">at         line 305</div>
+        <code>                    string
+    <strong>getForeignExchanges</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get transfer memo</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setForeignExchanges">
+        <div class="location">at         line 315</div>
+        <code>                    <a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a>
+    <strong>setForeignExchanges</strong>($foreignExchanges)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set transfer memo</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$foreignExchanges</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../Hyperwallet/Model/TransferRefund.html"><abbr title="Hyperwallet\Model\TransferRefund">TransferRefund</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
