@@ -1,6 +1,6 @@
 {
-  "name": "hyperwallet/sdk",
-  "description": "A library to manage users, transfer methods and payments through the Hyperwallet API",
+  "name": "coliving/hyperwallet-sdk",
+  "description": "A library to manage users, transfer methods and payments through the Hyperwallet API. This is fork from hyperwallet/sdk to upgrade the guzzlehttp package",
   "type": "library",
   "keywords": [
     "hyperwallet",
@@ -21,7 +21,7 @@
   ],
   "require": {
     "php": ">=5.5.9",
-    "guzzlehttp/guzzle": "^6.2.1",
+    "guzzlehttp/guzzle": "^7.2",
     "phpseclib/phpseclib": "^2.0.11",
     "gree/jose": "^2.2.1"
   },
