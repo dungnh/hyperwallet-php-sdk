@@ -15,9 +15,13 @@ Hyperwallet's PHP server SDK requires at minimum PHP 5.6 and above.
 
 Installation
 ------------
-
+* Install from hyperwallet/sdk
 ```bash
 $ composer require hyperwallet/sdk
+```
+* Install from Coliving
+```bash
+$ composer require coliving/hyperwallet-sdk
 ```
 
 Documentation
@@ -60,10 +64,10 @@ To write an app using the SDK
   }
   ```
 * Error Handling
-The `HyperwalletException` has an array of errors with `code`, `message` and `fielName` properties to represent a error.  
-  ```php 
+The `HyperwalletException` has an array of errors with `code`, `message` and `fielName` properties to represent a error.
+  ```php
     try {
-      ... 
+      ...
     } catch (\Hyperwallet\Exception\HyperwalletException $e) {
       // var_dump($e->getErrorResponse());
       // var_dump($e->getErrorResponse()->getErrors());
