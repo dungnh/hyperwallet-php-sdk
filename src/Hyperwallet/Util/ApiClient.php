@@ -3,7 +3,7 @@ namespace Hyperwallet\Util;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Exception\ConnectException;
-use GuzzleHttp\UriTemplate;
+use Guzzle\Parser\UriTemplate\UriTemplate;
 use Hyperwallet\Exception\HyperwalletApiException;
 use Hyperwallet\Exception\HyperwalletException;
 use Hyperwallet\Model\BaseModel;
@@ -27,7 +27,7 @@ class ApiClient {
 
     /**
      * The Guzzle http client
-     * 
+     *
      * @var Client
      */
     private $client;
