@@ -14,10 +14,10 @@ use Hyperwallet\Model\BankCard;
 use Hyperwallet\Model\BankCardStatusTransition;
 use Hyperwallet\Model\PaperCheck;
 use Hyperwallet\Model\PaperCheckStatusTransition;
-use Hyperwallet\Model\Payment;
-use Hyperwallet\Model\PaymentStatusTransition;
 use Hyperwallet\Model\PayPalAccount;
 use Hyperwallet\Model\PayPalAccountStatusTransition;
+use Hyperwallet\Model\Payment;
+use Hyperwallet\Model\PaymentStatusTransition;
 use Hyperwallet\Model\PrepaidCard;
 use Hyperwallet\Model\PrepaidCardStatusTransition;
 use Hyperwallet\Model\Transfer;
@@ -30,8 +30,9 @@ use Hyperwallet\Model\VenmoAccount;
 use Hyperwallet\Model\VenmoAccountStatusTransition;
 use Hyperwallet\Response\ErrorResponse;
 use Hyperwallet\Util\ApiClient;
+use PHPUnit\Framework\TestCase;
 
-class HyperwalletTest extends \PHPUnit_Framework_TestCase {
+class HyperwalletTest extends TestCase {
 
     public function testConstructor_throwErrorIfUsernameIsEmpty() {
         try {

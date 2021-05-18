@@ -3,8 +3,9 @@ namespace Hyperwallet\Tests\Response;
 
 use Hyperwallet\Model\Error;
 use Hyperwallet\Response\ErrorResponse;
+use PHPUnit\Framework\TestCase;
 
-class ErrorResponseTest extends \PHPUnit_Framework_TestCase {
+class ErrorResponseTest extends TestCase {
 
     public function testBodyParsing() {
         $errorResponse = new ErrorResponse(200, array(
