@@ -3,7 +3,7 @@ namespace Hyperwallet\Util;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Exception\ConnectException;
-use Guzzle\Parser\UriTemplate\UriTemplate;
+use GuzzleHttp\UriTemplate;
 use Hyperwallet\Exception\HyperwalletApiException;
 use Hyperwallet\Exception\HyperwalletException;
 use Hyperwallet\Model\BaseModel;
@@ -23,7 +23,7 @@ class ApiClient {
      *
      * @var string
      */
-    const VERSION = '1.6.1';
+    const VERSION = '1.6.5';
 
     /**
      * The Guzzle http client
