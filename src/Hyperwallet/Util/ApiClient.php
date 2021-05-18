@@ -3,13 +3,13 @@ namespace Hyperwallet\Util;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Exception\ConnectException;
-use GuzzleHttp\UriTemplate;
 use Hyperwallet\Exception\HyperwalletApiException;
 use Hyperwallet\Exception\HyperwalletException;
 use Hyperwallet\Model\BaseModel;
 use Hyperwallet\Response\ErrorResponse;
 use Hyperwallet\Util\HyperwalletEncryption;
 use Hyperwallet\Util\HyperwalletUUID;
+use Hyperwallet\Util\UriTemplate;
 
 /**
  * The internal API client

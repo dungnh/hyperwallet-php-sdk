@@ -1,10 +1,11 @@
 <?php
 namespace Hyperwallet\Tests\Util;
 
-use Hyperwallet\Util\HyperwalletEncryption;
 use Hyperwallet\Exception\HyperwalletException;
+use Hyperwallet\Util\HyperwalletEncryption;
+use PHPUnit\Framework\TestCase;
 
-class HyperwalletEncryptionTest extends \PHPUnit_Framework_TestCase {
+class HyperwalletEncryptionTest extends TestCase {
 
     public function testShouldSuccessfullyEncryptAndDecryptTextMessage() {
         // Setup data

@@ -2,8 +2,8 @@
 namespace Hyperwallet\Tests\Util;
 
 use GuzzleHttp\Exception\ConnectException;
-use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\HandlerStack;
+use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
@@ -12,8 +12,9 @@ use Hyperwallet\Exception\HyperwalletException;
 use Hyperwallet\Model\BaseModel;
 use Hyperwallet\Util\ApiClient;
 use Hyperwallet\Util\HyperwalletEncryption;
+use PHPUnit\Framework\TestCase;
 
-class ApiClientTest extends \PHPUnit_Framework_TestCase {
+class ApiClientTest extends TestCase {
 
     /**
      * @var array
