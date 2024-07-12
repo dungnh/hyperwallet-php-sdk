@@ -3,14 +3,13 @@ namespace Hyperwallet\Util;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\BadResponseException;
 use GuzzleHttp\Exception\ConnectException;
-use Guzzle\Parser\UriTemplate\UriTemplate;
 use Hyperwallet\Exception\HyperwalletApiException;
 use Hyperwallet\Exception\HyperwalletException;
 use Hyperwallet\Model\BaseModel;
 use Hyperwallet\Response\ErrorResponse;
 use Hyperwallet\Util\HyperwalletEncryption;
 use Hyperwallet\Util\HyperwalletUUID;
-
+use Hyperwallet\Util\UriTemplate;
 
 /**
  * The internal API client
@@ -24,7 +23,7 @@ class ApiClient {
      *
      * @var string
      */
-    const VERSION = '2.1.0';
+    const VERSION = '1.6.5';
 
     /**
      * The Guzzle http client
@@ -96,7 +95,7 @@ class ApiClient {
      * @throws HyperwalletApiException
      */
     public function doPost($partialUrl, array $uriParams, BaseModel $data = null, array $query = array(), array $headers = array()) {
-       return $this->doRequest('POST', $partialUrl, $uriParams, array(
+        return $this->doRequest('POST', $partialUrl, $uriParams, array(
             'query' => $query,
             'body' => $data ? \GuzzleHttp\json_encode($data->getPropertiesForCreate(), JSON_FORCE_OBJECT) : '{}',
             'headers' => array_merge($headers, array(
@@ -174,7 +173,9 @@ class ApiClient {
             $this->checkResponseHeaderContentType($response);
             $body = $this->isEncrypted ? \GuzzleHttp\json_decode(\GuzzleHttp\json_encode($this->encryption->decrypt($response->getBody())), true) :
                 \GuzzleHttp\json_decode($response->getBody(), true);
-
+            if (isset($body['links'])) {
+                unset($body['links']);
+            }
             return $body;
         } catch (ConnectException $e) {
             $errorResponse = new ErrorResponse(0, array('errors' => array(
