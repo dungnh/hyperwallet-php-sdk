@@ -2,7 +2,7 @@
 namespace Hyperwallet\Model;
 
 /**
- * Represents a V4 Receipt
+ * Represents a V3 Receipt
  *
  * @property string $journalId The journal id
  * @property string $type The transaction type

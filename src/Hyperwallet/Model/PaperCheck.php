@@ -2,7 +2,7 @@
 namespace Hyperwallet\Model;
 
 /**
- * Represents a V4 Paper Check
+ * Represents a V3 Paper Check
  *
  * @property string $token The paper check token
  * @property string $status The paper check status
