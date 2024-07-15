@@ -2,7 +2,7 @@
 namespace Hyperwallet\Model;
 
 /**
- * Represents a V4 Error
+ * Represents a V3 Error
  *
  * @package Hyperwallet\Model
  */

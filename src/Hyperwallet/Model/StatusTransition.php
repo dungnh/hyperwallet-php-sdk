@@ -2,7 +2,7 @@
 namespace Hyperwallet\Model;
 
 /**
- * Represents a V4 Status Transition
+ * Represents a V3 Status Transition
  *
  * @property string $token The status transition token
  * @property \DateTime $createdOn The status transition creation date
